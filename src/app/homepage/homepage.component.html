@@ -1,0 +1,35 @@
+<div id="section-1">
+
+  <div id="container">
+    <div id="header">
+      <h1>My Taks</h1>
+      <div id="actions">
+        <button class="primary btn" mat-raised-button color="primary">Create Task</button>
+      </div>
+    </div>
+
+    <div class="content">
+      <mat-card>
+        <mat-card-content>
+          <div id="cardHeader">
+            <div class="category">
+          <button class="categories " *ngFor="let category of categories"
+           [ngClass] = "{'active': category.active}"  mat-button>{{category.title}}</button>
+            </div>
+            <div class="cardActions"></div>
+          </div>
+          <mat-selection-list #shoes>
+            <mat-list-option >Task 1</mat-list-option>
+            <mat-list-option >Task 1</mat-list-option>
+            <mat-list-option >Task 1</mat-list-option>
+            <mat-list-option >Task 1</mat-list-option>
+
+          </mat-selection-list>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>
+<div id="section-2">
+
+</div>
